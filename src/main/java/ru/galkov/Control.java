@@ -23,10 +23,9 @@ public class Control {
 				
 			) {
 		
-			Iterable<Message> msg = mRepo.findAll();
-			
+		
 			model.put("name", name);
-			model.put("msg", msg.toString());
+			model.put("msg", mRepo.findAll().toString());
 
 			return "hello";
 	}
@@ -42,7 +41,7 @@ public class Control {
 		mRepo.save(msg);
 		
 		
-		model.put("msg", msg.toString());		
+		model.put("msg", mRepo.findAll().toString());		
 		return "hello";
 		
 	}
