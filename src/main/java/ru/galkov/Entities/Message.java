@@ -85,7 +85,7 @@ public class Message {
 	@Override
 	  public String toString() {
 	    return String.format(
-	        "Message[id=%d, firstName='%s', lastName='%s']",
+	        "Message[id=%d, text='%s', tag='%s']",
 	        id, text, tag);
 	  }
 
