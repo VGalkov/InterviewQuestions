@@ -15,7 +15,7 @@ public class Control {
 	
 	@Autowired
 	private MessageRepository mRepo;
-	
+	 
 	@GetMapping("hello")
 	public String makeAnswer(
 				@RequestParam(name="name") String name,
