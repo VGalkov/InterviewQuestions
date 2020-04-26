@@ -20,10 +20,10 @@ public class Control {
 	public String makeAnswer(
 				@RequestParam(name="name") String name,
 				Map<String, Object> model
+				
 			) {
 		
 			Iterable<Message> msg = mRepo.findAll();
-			
 			
 			model.put("name", name);
 			model.put("msg", msg.toString());
