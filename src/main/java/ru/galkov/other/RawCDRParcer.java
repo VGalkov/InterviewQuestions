@@ -93,7 +93,7 @@ public class rawCDRParcer	extends GlobalScriptBase {
 
 	private void mountCDRLog(File mainLog) {
 			
-		// +1 - костыль... что за?!?!? почему так правильно?!?
+		// +1 - сменить на LocalDateTime надоела нумерация с 0.
 		String path1 = ((calendar.get(Calendar.MONTH)+1)<10) ? ("0" + Integer.toString(calendar.get(Calendar.MONTH)+1)) :(Integer.toString(calendar.get(Calendar.MONTH)+1));
  		String monthDirStr = path + "/" + calendar.get(Calendar.YEAR) + "/" + path1;
 // 		System.out.println(monthDirStr);
